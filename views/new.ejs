@@ -1,0 +1,36 @@
+<style>
+    form{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    input{
+        width: 500px;
+        height: 50px;
+        outline-style: none;
+        font-size: 16px;
+    }
+    input:hover{
+        border: 2px solid red;
+        border-radius: 20px;
+    }
+    h1{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    
+</style>
+
+    <form action="/new" method="POST" autocomplete="off">
+        <h1>Enter the post</h1>
+        <input type="text" name="name" placeholder="enter the name">
+        <br><br>
+        <input type="text" name="image" placeholder="enter the url">
+        <br><br>
+        <input type="text" name="description" placeholder="type something">
+        <br><br>
+        <input style="cursor: pointer;" type="submit">
+    </form>

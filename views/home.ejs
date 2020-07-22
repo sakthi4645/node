@@ -1,0 +1,38 @@
+<style>
+    a{
+        text-decoration: none;
+        font-size: 40px;
+        margin-left: 37%;
+    }
+    h1{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    img{
+        justify-content: center;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+</style>
+
+
+
+
+
+
+
+
+<h1>Welcome to news feed</h1>
+
+<a href="/new">click here to add a post</a>
+
+<% users.forEach(function(u){ %>
+
+    <h1><%= u.name %> </h1>
+    <img src="<%= u.image%>">
+    <p><%= u.description %></p>
+
+<% }) %>
+
